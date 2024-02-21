@@ -16,8 +16,6 @@ class Watches {
         let minutes = new String(new Date().getMinutes());
         let seconds = new String(new Date().getSeconds());
 
-        console.log(hours, minutes, seconds);
-
         let hour = hours.length > 1 ? hours[0] : 0;
         let subhour = hours[1];
         let minute = minutes.length > 1 ? minutes[0] : 0;
