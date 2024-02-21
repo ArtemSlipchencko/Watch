@@ -42,9 +42,7 @@ class Watches {
         showMinute.classList.add(digits[+minute]);
         showSubminute.classList.add(digits[+subminute]);
         showSecond.classList.add(digits[+second]);
-        console.log(second)
         showSubsecond.classList.add(digits[+subsecond]);
-        console.log(subsecond)
     }
 
     start () {
