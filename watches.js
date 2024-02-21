@@ -17,11 +17,11 @@ class Watches {
         let seconds = new String(new Date().getSeconds());
 
         let hour = hours.length > 1 ? hours[0] : 0;
-        let subhour = hours[1];
+        let subhour = hours.length > 1 ? hours[1] : hours[0];
         let minute = minutes.length > 1 ? minutes[0] : 0;
-        let subminute = minutes[1];
+        let subminute = minutes.length > 1 ? minutes[1] : minutes[0];
         let second = seconds.length > 1 ? seconds[0] : 0;
-        let subsecond = seconds[1];
+        let subsecond = seconds.length > 1 ? seconds[1] : seconds[0];
 
         const showHour = document.querySelector("#hour");
         const showSubhour = document.querySelector("#subhour");
@@ -42,7 +42,9 @@ class Watches {
         showMinute.classList.add(digits[+minute]);
         showSubminute.classList.add(digits[+subminute]);
         showSecond.classList.add(digits[+second]);
+        console.log(second)
         showSubsecond.classList.add(digits[+subsecond]);
+        console.log(subsecond)
     }
 
     start () {
